@@ -1,0 +1,11 @@
+namespace userList.userList_db.tables;
+
+context customerData {
+
+    /*@@layout{"layoutInfo":{"x":167,"y":81.5}}*/
+    entity Customer {
+        key cust_id     : Integer;
+            cust_Name   : String(100);
+            totalAmount : Double;
+    };
+};

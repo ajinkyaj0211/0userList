@@ -1,0 +1,12 @@
+namespace userList.userList_db.tables;
+
+context UserData {
+
+    /*@@layout{"layoutInfo":{"x":164,"y":91.5}}*/
+    entity User {
+        key id        : Integer;
+            FirstName : String(100);
+            LastName  : String(100);
+            EmailID   : String(100);
+    };
+};

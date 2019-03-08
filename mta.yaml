@@ -1,0 +1,19 @@
+ID: userList
+_schema-version: '2.1'
+version: 0.0.1
+
+modules:
+ - name: userList_db
+   type: hdb
+   path: userList_db
+   requires:
+    - name: hdi_userList_db
+
+resources:
+ - name: hdi_userList_db
+   parameters:
+      config:
+         schema: userList
+   properties:
+      hdi-container-name: ${service-name}
+   type: com.sap.xs.hdi-container
