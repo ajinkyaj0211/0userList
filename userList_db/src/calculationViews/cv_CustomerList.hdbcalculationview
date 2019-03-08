@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Calculation:scenario xmlns:Calculation="http://www.sap.com/ndb/BiModelCalculation.ecore" id="userList.userList_db.calculationViews::cv_CustomerList" applyPrivilegeType="NONE" dataCategory="DIMENSION" dimensionType="STANDARD" schemaVersion="3.0" outputViewType="Projection" cacheInvalidationPeriod="HOURLY" enforceSqlExecution="false">
+<descriptions defaultDescription="cv_CustomerList"/>
+<localVariables/>
+<variableMappings/>
+<dataSources>
+  <DataSource id="userList.userList_db.tables::customerData.Customer">
+    <resourceUri>userList.userList_db.tables::customerData.Customer</resourceUri>
+  </DataSource>
+</dataSources>
+<calculationViews/>
+<logicalModel id="userList.userList_db.tables::customerData.Customer">
+  <attributes>
+    <attribute id="cust_id" order="1" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="cust_id"/>
+      <keyMapping columnObjectName="customerData.Customer" columnName="cust_id"/>
+    </attribute>
+    <attribute id="cust_Name" order="2" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="cust_Name"/>
+      <keyMapping columnObjectName="customerData.Customer" columnName="cust_Name"/>
+    </attribute>
+    <attribute id="totalAmount" order="3" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="totalAmount"/>
+      <keyMapping columnObjectName="customerData.Customer" columnName="totalAmount"/>
+    </attribute>
+  </attributes>
+  <calculatedAttributes/>
+  <baseMeasures/>
+  <calculatedMeasures/>
+  <restrictedMeasures/>
+</logicalModel>
+<layout>
+  <shapes>
+    <shape expanded="true" modelObjectName="Output" modelObjectNameSpace="MeasureGroup">
+      <upperLeftCorner x="40" y="85"/>
+    </shape>
+  </shapes>
+</layout>
+</Calculation:scenario>
